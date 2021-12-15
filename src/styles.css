@@ -1,0 +1,213 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#map {
+    height: 100%;
+}
+
+
+ .option {
+    background: rgba(255, 255, 255, 0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    color: #505050;
+    border: 2px solid #505050;
+    transition: all 0.3s ease;
+}
+
+/* width */
+::-webkit-scrollbar {   
+    width: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2 {
+    color: white;
+    border-color: white;
+}
+
+#option-1:checked:checked~.option-1 ,
+#option-2:checked:checked~.option-2 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    font-size: 20px;
+    color: #808080;
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span {
+    color: white;
+}
+
+ .paintOption {
+     background: rgba(255, 255, 255, 0);
+     height: 100%;
+     width: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     margin: 0 10px;
+     border-radius: 100%;
+     cursor: pointer;
+     padding: 2px;
+     margin: 5px;
+     border: 2px solid #505050;
+     transition: all 0.3s ease;
+ }
+
+ .paint{
+     width: 50px;
+ }
+
+ #paintOption1:checked:checked~.paintOption1,
+ #paintOption2:checked:checked~.paintOption2,
+ #paintOption3:checked:checked~.paintOption3,
+ #paintOption4:checked:checked~.paintOption4,
+ #paintOption5:checked:checked~.paintOption5,
+ #paintOption6:checked:checked~.paintOption6  {
+     border: 3px solid #ffffff;
+ }
+
+
+ #textInput-label, #textInput{
+     color: white;
+ }
+
+ .MuiOutlinedInput-notchedOutline{
+     border-color: rgba(255, 255, 255, 0.75) !important;
+ }
+
+.Learn {
+    background-color: rgba(0,0,0, 0.5) !important;
+}
+
+.SpecBlock {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+
+}
+
+
+.BuyBlock {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+
+}
+
+.MuiStepIcon-root, .MuiStepIcon-active {
+    color: whitesmoke !important;
+}
+
+.MuiStepIcon-text {
+    fill: black !important;
+}
+
+.MuiButton-root ~ .Mui-disabled {
+    color: transparent !important;
+}
+
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: white;
+}
+
+ .MuiFormControlLabel-label {
+     font-size: 16px !important;
+ }
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+    color: darkgray !important;
+}
+
+.css-68u1dt-MuiInputBase-root-MuiInput-root:before {
+     border-bottom: 1px solid darkgray !important;
+   
+}
+
+.css-68u1dt-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: 2px solid whitesmoke !important;
+
+}
+
+.css-1480iag-MuiInputBase-root-MuiInput-root:before{
+    border-bottom: 1px solid darkgray !important;
+}
+
+.css-1480iag-MuiInputBase-root-MuiInput-root:after{
+    border-bottom: 2px solid whitesmoke !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+    color: darkgray !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    color: whitesmoke !important;   
+}
+
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+    color: whitesmoke !important;
+}
+
+.Mui-focused{
+    color: whitesmoke !important;
+}
+
+.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+    color: whitesmoke !important;
+}
+
+.css-79ws1d-MuiModal-root {
+    position: absolute !important;
+    z-index: 1300;
+    right: auto !important;
+    left: 35% !important;
+    top: 0 !important;
+    margin-top: 2em !important;
+    display: flex !important;
+    align-content: center !important;
+    justify-content: center !important;
+}
+
+.doc {
+    font-weight: 600;
+    color:rgb(243, 203, 26)
+}
+
