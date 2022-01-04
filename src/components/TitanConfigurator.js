@@ -208,7 +208,7 @@ const useStyles = makeStyles(theme => ({
 
 
 const TitanModelWhite = () => {
-  const gltf = useLoader(GLTFLoader, '/models/TitanWhite.gltf');
+  const gltf = useLoader(GLTFLoader, './models/TitanWhite.gltf');
   return (
     <>
       <primitive object={gltf.scene} />
@@ -217,7 +217,7 @@ const TitanModelWhite = () => {
 };
 
 const TitanModelBlue = () => {
-  const gltf = useLoader(GLTFLoader, '/models/TitanBlue.gltf');
+  const gltf = useLoader(GLTFLoader, './models/TitanBlue.gltf');
   return (
     <>
       <primitive object={gltf.scene} />
@@ -226,7 +226,7 @@ const TitanModelBlue = () => {
 };
 
 const TitanModelRed = () => {
-  const gltf = useLoader(GLTFLoader, '/models/TitanRed.gltf');
+  const gltf = useLoader(GLTFLoader, './models/TitanRed.gltf');
   return (
     <>
       <primitive object={gltf.scene} />
@@ -235,7 +235,7 @@ const TitanModelRed = () => {
 };
 
 const TitanModelGrey = () => {
-  const gltf = useLoader(GLTFLoader, '/models/TitanGrey.gltf');
+  const gltf = useLoader(GLTFLoader, './models/TitanGrey.gltf');
   return (
     <>
       <primitive object={gltf.scene} />
@@ -244,7 +244,7 @@ const TitanModelGrey = () => {
 };
 
 const TitanModelOrange = () => {
-  const gltf = useLoader(GLTFLoader, '/models/TitanOrange.gltf');
+  const gltf = useLoader(GLTFLoader, './models/TitanOrange.gltf');
   return (
     <>
       <primitive object={gltf.scene} />
@@ -253,7 +253,7 @@ const TitanModelOrange = () => {
 };
 
 const TitanModelGold = () => {
-  const gltf = useLoader(GLTFLoader, '/models/TitanGold.gltf');
+  const gltf = useLoader(GLTFLoader, './models/TitanGold.gltf');
   return (
     <>
       <primitive object={gltf.scene} />
