@@ -176,19 +176,6 @@ if(btnScrollDown){
       });
 
 
-      var script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB4LvjiwsCkjCHYKkvM7W5Q90pMVKOS4Kg&callback=initMap';
-script.async = true;
-
-// Attach your callback function to the `window` object
-window.initMap = function() {
-  // JS API is loaded and available
-};
-
-// Append the 'script' element to 'head'
-document.head.appendChild(script);
-
-
       const handleScroll = (event) => {
         const anchor = (event.target.ownerDocument || document).querySelector('#models');
 
@@ -259,9 +246,6 @@ document.head.appendChild(script);
              Learn More
             <KeyboardArrowRight/>
              </LearnButton>
-   
-            <section className={classes.ELiteSection2}>
-             </section>
 
              <Typography variant='h4' align='center' className={classes.ModelsHeader}>Models</Typography>
 
