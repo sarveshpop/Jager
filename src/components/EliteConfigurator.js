@@ -732,7 +732,7 @@ export default function Viewer() {
                   <Typography className={classes.Terms}>By placing this order, I agree to the <a href="#" class="doc">Jager Order Agreement</a>, 
                     <a href="#" class="doc"> Terms of Use</a>, and <a href="#" class="doc">Privacy Notice</a>.
                   And am willing to sell my soul to Jeffrey Bezoz for a 1 year Prime subscription</Typography>
-                  <Button onClick={handleOpen}  variant="contained" type='submit' className={classes.OrderButton}>Place Order</Button>
+                  <Button onClick={handleOpen}  variant="contained" type='submit' className={classes.OrderButton} disabled>Place Order</Button>
               </Grid>
             </Grid>
             </form>
