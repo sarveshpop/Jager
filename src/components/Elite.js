@@ -2,7 +2,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax'
-import {useMediaQuery} from '@material-ui/core';
 import { createTheme} from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 import { styled } from '@mui/material/styles';
@@ -16,12 +15,9 @@ import Footer from './ui/Footer';
 
 import EliteLogo from '../res/elitelogo.png';
 import EliteHero from '../res/EliteHero.png'
-import EliteHeroXL from '../res/EliteHero-xl.png'
 import InteriorFront from '../res/interiorFront.jpg'
 import Elite2 from '../res/elite2-xl.png'
-import SpecEliteXL from '../res/specelite-xl.png'
 import SpecElite from '../res/specelite.png'
-import BuyEliteXL from '../res/buyelite-xl.png'
 import BuyElite from '../res/buyelite.png'
 
 const TITLE = 'Jager Elite'
@@ -196,15 +192,6 @@ if(btnScrollDown){
   btnScrollDown.addEventListener('click', scrollDown);}
 }
 )();
-
-
-      const theme = React.useMemo(() =>
-      createTheme({
-        typography: {
-          fontSize: 16,
-        },
-      }),
-      )
 
 //Render Page
     const classes = useStyles();
