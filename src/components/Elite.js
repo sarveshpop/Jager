@@ -2,7 +2,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax'
-import { createTheme} from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 import { styled } from '@mui/material/styles';
 import Button from '@material-ui/core/Button';
