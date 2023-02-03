@@ -166,14 +166,6 @@ if(btnScrollDown){
 }
 })();
 
-      const theme = React.useMemo(() =>
-      createTheme({
-        typography: {
-          fontSize: 16,
-        },
-      }),
-      )
-
 //Render Page
     const classes = useStyles();
   
