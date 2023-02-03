@@ -179,27 +179,13 @@ if(btnScrollDown){
       }),
       )
 
-      const breakpoint = useMediaQuery(theme.breakpoints.down("xl"));
-
 //Render Page
     const classes = useStyles();
-
-        const HeroXL = (
-      <img alt='Titan Page Cover'
-             className={classes.TitanHero}
-             src={TitanHeroXL} height={'100%'}
-             width={'100%'}/>)
-
+  
     const Hero = (
       <img alt='Titan Page Cover'
              className={classes.TitanHero}
              src={TitanHero} height={'100%'}
-             width={'100%'}/>)
-
-    const HeroSpecXL = (
-      <img alt='Titan Specification Section Cover'
-             src={SpecTitanXL} height={'100%'}
-             className={classes.TitanSpecHero}
              width={'100%'}/>)
 
     const HeroSpec = (
@@ -208,12 +194,6 @@ if(btnScrollDown){
              src={SpecTitan} height={'100%'}
              width={'100%'}/>)
              
-    const HeroBuyXL = (
-      <img alt='Titan Buy Section Cover'
-             src={BuyTitanXL} height={'100%'}
-             className={classes.TitanBuyHero}
-             width={'100%'}/>)
-
     const HeroBuy = (
       <img alt='Titan Buy Section Cover'
              src={BuyTitan} height={'100%'}
@@ -226,7 +206,7 @@ if(btnScrollDown){
           <title>{ TITLE }</title>
         </Helmet>
         <section className={classes.HeroBlock}>                
-          {breakpoint ? HeroXL : Hero}
+          {Hero}
         <Typography className={classes.HeroTitle} align='center'>
           <img alt='jager' width='30%' src={TitanLogo}/>
         </Typography>
@@ -251,7 +231,7 @@ if(btnScrollDown){
           <img alt='Elite 2' src={InteriorBack} height='100%' width='100%' className={classes.InteriorHero}/> 
         </section>
         <section className={classes.SpecBlock}>
-        {breakpoint ? HeroSpecXL : HeroSpec}
+        {HeroSpec}
                 <div className={classes.SpecSheet}>
         <Grid container direction='column' >
           <Grid container item className={classes.SpecTitle}>
@@ -294,7 +274,7 @@ if(btnScrollDown){
         <BuyButton component={Link} to={'/TitanConfigurator'}>
              Buy Now
         </BuyButton>
-        {breakpoint ? HeroBuyXL : HeroBuy}
+        {HeroBuy}
         </section>
         <Footer>
           
