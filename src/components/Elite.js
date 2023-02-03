@@ -206,29 +206,13 @@ if(btnScrollDown){
       }),
       )
 
-      const breakpoint = useMediaQuery(theme.breakpoints.down("xl"));
-
 //Render Page
     const classes = useStyles();
-
-
-
-    const HeroXL = (
-      <img alt='Elite Page Cover'
-             className={classes.EliteHero}
-             src={EliteHeroXL} height={'100%'}
-             width={'100%'}/>)
 
     const Hero = (
       <img alt='Elite Page Cover'
              className={classes.EliteHero}
              src={EliteHero} height={'100%'}
-             width={'100%'}/>)
-
-    const HeroSpecXL = (
-      <img alt='Elite Specification Section Cover'
-             src={SpecEliteXL} height={'100%'}
-             className={classes.EliteSpecHero}
              width={'100%'}/>)
 
     const HeroSpec = (
@@ -237,19 +221,11 @@ if(btnScrollDown){
              className={classes.EliteSpecHero}
              width={'100%'}/>)
              
-    const HeroBuyXL = (
-      <img alt='Elite Buy Section Cover'
-             src={BuyEliteXL} height={'100%'}
-             className={classes.EliteBuyHero}
-             width={'100%'}/>)
-
     const HeroBuy = (
       <img alt='Elite Buy Section Cover'
              src={BuyElite} height={'100%'}
              className={classes.EliteBuyHero}
              width={'100%'}/>) 
-
-
 
     return (
         <ParallaxProvider> 
