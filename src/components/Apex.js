@@ -2,7 +2,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax'
-import {useMediaQuery} from '@material-ui/core';
 import { createTheme} from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 import { styled } from '@mui/material/styles';
@@ -15,11 +14,8 @@ import Footer from './ui/Footer';
 
 import ApexLogo from '../res/apexlogo.png'
 import ApexHero from '../res/ApexHero.png'
-import ApexHeroXL from '../res/ApexHero-xl.png'
 import InteriorFront from '../res/interiorFront.jpg'
-import SpecApexXL from '../res/specapex-xl.png'
 import SpecApex from '../res/specapex.png'
-import BuyApexXL from '../res/buyapex-xl.png'
 import BuyApex from '../res/buyapex.png'
 
 const TITLE = 'Jager Apex'
@@ -170,14 +166,6 @@ if(btnScrollDown){
   btnScrollDown.addEventListener('click', scrollDown);
 }
 })();
-
-    const theme = React.useMemo(() =>
-      createTheme({
-        typography: {
-          fontSize: 16,
-        },
-      }),
-      )
 
 //Render Page
     const classes = useStyles();
