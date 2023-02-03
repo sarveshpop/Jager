@@ -184,34 +184,16 @@ if(btnScrollDown){
 //Render Page
     const classes = useStyles();
 
-                const HeroXL = (
-      <img alt='Apex Page Cover'
-             className={classes.ApexHero}
-             src={ApexHeroXL} height={'100%'}
-             width={'100%'}/>)
-
     const Hero = (
       <img alt='Apex Page Cover'
              className={classes.ApexHero}
              src={ApexHero} height={'100%'}
-             width={'100%'}/>)
-    
-    const HeroSpecXL = (
-      <img alt='Apex Specification Section Cover'
-             src={SpecApexXL} height={'100%'}
-             className={classes.ApexSpecHero}
              width={'100%'}/>)
 
     const HeroSpec = (
       <img alt='Apex Specification Section Cover'
              src={SpecApex} height={'100%'}
              className={classes.ApexSpecHero}
-             width={'100%'}/>)
-             
-    const HeroBuyXL = (
-      <img alt='Apex Buy Section Cover'
-             src={BuyApexXL} height={'100%'}
-             className={classes.ApexBuyHero}
              width={'100%'}/>)
 
     const HeroBuy = (
@@ -226,7 +208,7 @@ if(btnScrollDown){
           <title>{ TITLE }</title>
         </Helmet>
         <section className={classes.HeroBlock}>                
-        {breakpoint ? HeroXL : Hero}
+        {Hero}
         <Typography className={classes.HeroTitle} align='center'>
           <img alt='jager' width='30%' src={ApexLogo}/>
         </Typography>
@@ -245,7 +227,7 @@ if(btnScrollDown){
           <img alt='Elite Interior Front' src={InteriorFront}  height='100%' width='100%' className={classes.InteriorHero}/> 
         </section>
         <section className={classes.SpecBlock}>
-        {breakpoint ? HeroSpecXL : HeroSpec}
+        {HeroSpec}
                 <div className={classes.SpecSheet}>
         <Grid container direction='column' >
           <Grid container item className={classes.SpecTitle}>
@@ -288,7 +270,7 @@ if(btnScrollDown){
         <BuyButton component={Link} to={'/ApexConfigurator'}>
              Buy Now
         </BuyButton>
-        {breakpoint ? HeroBuyXL : HeroBuy}
+        {HeroBuy}
         </section>
         <Footer>
           
