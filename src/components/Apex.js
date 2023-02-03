@@ -179,8 +179,6 @@ if(btnScrollDown){
       }),
       )
 
-      const breakpoint = useMediaQuery(theme.breakpoints.down("xl"));
-
 //Render Page
     const classes = useStyles();
 
