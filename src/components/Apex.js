@@ -242,7 +242,7 @@ if(btnScrollDown){
             <KeyboardArrowDown/>
              </LearnButton>
         <section className={classes.InteriorBlock}>
-          <img alt='Elite Interior Front' src={InteriorFront} className={classes.InteriorHero}/> 
+          <img alt='Elite Interior Front' src={InteriorFront}  height='100%' width='100%' className={classes.InteriorHero}/> 
         </section>
         <section className={classes.SpecBlock}>
         {breakpoint ? HeroSpecXL : HeroSpec}
