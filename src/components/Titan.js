@@ -242,7 +242,7 @@ if(btnScrollDown){
             <KeyboardArrowDown/>
              </LearnButton>
         <section className={classes.InteriorBlock}>
-          <img alt='Elite Interior Front' src={InteriorFront} className={classes.InteriorHero}/> 
+          <img alt='Elite Interior Front' src={InteriorFront}  height='100%' width='100%' className={classes.InteriorHero}/> 
         </section>
         {/* <Button id="scroll_down1" className={classes.NextSection} >
           <KeyboardArrowDown className={classes.NextSection}/>
