@@ -257,7 +257,7 @@ if(btnScrollDown){
           <title>{ TITLE }</title>
         </Helmet>
         <section className={classes.HeroBlock}>                
-        {breakpoint ? HeroXL : Hero}
+        {Hero}
         <Typography className={classes.HeroTitle} align='center'>
           <img alt='jager' width='30%' src={EliteLogo}/>
         </Typography>
@@ -285,7 +285,7 @@ if(btnScrollDown){
           <KeyboardArrowDown id="scroll_down2" className={classes.NextSection}/>
         </Button>         */}
         <section className={classes.SpecBlock}>
-        {breakpoint ? HeroSpecXL : HeroSpec}
+        {HeroSpec}
         <div className={classes.SpecSheet}>
         <Grid container direction='column' >
           <Grid container item className={classes.SpecTitle}>
@@ -330,7 +330,7 @@ if(btnScrollDown){
         <BuyButton component={Link} to={'/EliteConfigurator'}>
              Buy Now
         </BuyButton>
-        {breakpoint ? HeroBuyXL : HeroBuy}
+        {HeroBuy}
         </section>
           <Footer className={classes.Foot}>
 
