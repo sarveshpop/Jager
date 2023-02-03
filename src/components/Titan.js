@@ -2,7 +2,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax'
-import {useMediaQuery} from '@material-ui/core';
 import { createTheme} from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 import { styled } from '@mui/material/styles';
@@ -15,12 +14,9 @@ import Footer from './ui/Footer';
 
 import TitanLogo from '../res/titanlogo.png'
 import TitanHero from '../res/TitanHero.png'
-import TitanHeroXL from '../res/TitanHero-xl.png'
 import InteriorFront from '../res/interiorFront.jpg'
 import InteriorBack from '../res/interiorBack.jpg'
-import SpecTitanXL from '../res/spectitan-xl.png'
 import SpecTitan from '../res/spectitan.png'
-import BuyTitanXL from '../res/buytitan-xl.png'
 import BuyTitan from '../res/buytitan.png'
 
 const TITLE = 'Jager Titan'
